@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOXNEWS</title>
+    <!-- Bootstrap 5 CSS -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Main Navigation -->
+    <header>
+      <!-- Top Navigation Bar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3"
+      >
+        <div class="container">
+          <!-- Hamburger Menu Button -->
+          <button
+            class="navbar-toggler border-0 p-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Search Form -->
+          <div class="d-none d-lg-block mx-4">
+            <form class="d-flex">
+              <div class="input-group border rounded-pill overflow-hidden">
+                <span class="input-group-text bg-white border-0">
+                  <i class="bi bi-search"></i>
+                </span>
+                <input
+                  type="search"
+                  class="form-control border-0 shadow-none"
+                  placeholder="Search countries"
+                />
+              </div>
+            </form>
+          </div>
+
+          <!-- Logo - Center on larger screens -->
+          <a class="navbar-brand mx-auto" href="#">
+            <h1 class="h3 fw-bold m-0">JOXNEWS</h1>
+          </a>
+
+          <!-- Right Side Icons -->
+          <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center me-3">
+              <a href="#" class="text-dark text-decoration-none">
+                Cart <span class="badge bg-danger rounded-pill">1</span>
+              </a>
+            </div>
+            <a href="#" class="btn btn-dark rounded-1 px-3">Subscribe</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Main Menu -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 mt-2">
+        <div class="container">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarContent"
+          >
+            <ul class="navbar-nav fw-bold">
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Entertainment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Politics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Technology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-3" href="#">Health</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Search Form for Mobile View -->
+      <div class="container d-lg-none mb-2">
+        <form class="d-flex">
+          <div class="input-group border rounded-pill overflow-hidden w-100">
+            <span class="input-group-text bg-white border-0">
+              <i class="bi bi-search"></i>
+            </span>
+            <input
+              type="search"
+              class="form-control border-0 shadow-none"
+              placeholder="Search countries"
+            />
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Main featured article - takes 8 columns on larger screens -->
+        <div class="col-lg-8 mb-4">
+          <div class="h-100">
+            <img
+              src="images/1.jpeg"
+              class="card-img-top"
+              alt="Global Climate Summit Meeting"
+            />
+            <div class="card-body">
+              <h2 class="card-title fw-bold mt-3">
+                Global Climate Summit Yields Mixed Results on Key Agreements
+              </h2>
+              <div class="row">
+                <p class="card-text text-muted mt-3 col-lg-8 mb-4">
+                  The global stock market has reached unprecedented levels,
+                  buoyed by optimistic economic forecasts and strong corporate
+                  earnings.
+                </p>
+
+                <div class="d-flex align-items-center mt-3 col-lg-4 mb-4">
+                  <img
+                    src="images/6.png"
+                    class="rounded-circle me-2"
+                    alt="Author photo"
+                  />
+                  <div>
+                    <div class="fw-bold">Michael Brown</div>
+                    <small class="text-muted">December 15, 2024</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar with smaller articles - takes 4 columns -->
+        <div class="col-lg-4">
+          <!-- Business article -->
+          <div class="mb-3">
+            <div class="row g-3">
+              <div class="col-4">
+                <img
+                  src="images/2.png"
+                  class="img-fluid rounded-start h-100 w-100 object-fit-cover"
+                  alt="Stock Market"
+                />
+              </div>
+              <div class="col-8">
+                <div class="card-body py-2">
+                  <h6 class="card-title fw-bold mb-1">
+                    Stock Market Hits Record High Amid Economic Optimism
+                  </h6>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="badge bg-light text-dark">Business</span>
+                    <small class="text-muted">
+                      <i class="bi bi-clock"></i> 6 Min</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology article 1 -->
+          <div class="mb-3">
+            <div class="row g-3">
+              <div class="col-4">
+                <img
+                  src="images/3.jpg"
+                  class="img-fluid rounded-start h-100 w-100 object-fit-cover"
+                  alt="Tech Regulations"
+                />
+              </div>
+              <div class="col-8">
+                <div class="card-body py-2">
+                  <h6 class="card-title fw-bold mb-1">
+                    New Regulations Put Tech Giants Under the Spotlight
+                  </h6>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="badge bg-light text-dark">Technology</span>
+                    <small class="text-muted"
+                      ><i class="bi bi-clock"></i> 6 Min</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technology article 2 -->
+          <div class="mb-3">
+            <div class="row g-3">
+              <div class="col-4">
+                <img
+                  src="images/4.avif"
+                  class="img-fluid rounded-start h-100 w-100 object-fit-cover"
+                  alt="Blockchain"
+                />
+              </div>
+              <div class="col-8">
+                <div class="card-body py-2">
+                  <h6 class="card-title fw-bold mb-1">
+                    Blockchain Beyond Cryptocurrency: Revolutionizing Industries
+                  </h6>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="badge bg-light text-dark">Technology</span>
+                    <small class="text-muted"
+                      ><i class="bi bi-clock"></i> 5 Min</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Health article -->
+          <div class="mb-3">
+            <div class="row g-3">
+              <div class="col-4">
+                <img
+                  src="images/5.jpg"
+                  class="img-fluid rounded-start h-100 w-100 object-fit-cover"
+                  alt="Health Innovations"
+                />
+              </div>
+              <div class="col-8">
+                <div class="card-body py-2">
+                  <h6 class="card-title fw-bold mb-1">
+                    Health Innovations to Watch in 2024
+                  </h6>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="badge bg-light text-dark">Health</span>
+
+                    <small class="text-muted"
+                      ><i class="bi bi-clock"></i> 7 Min</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <!-- Header with "Latest News" and "View all" link -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Latest News</h2>
+        <a href="#" class="text-danger text-decoration-none"
+          >View all <span>&rarr;</span></a
+        >
+      </div>
+
+      <div class="row g-4">
+        <!-- Main featured article - large left column -->
+        <div class="col-lg-6">
+          <div class="card border-0 h-100">
+            <img
+              src="images/7.jpg"
+              class="card-img-top rounded"
+              alt="Global Summit"
+            />
+            <div class="card-body ps-0">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="text-muted small">Politics</span>
+                <div class="d-flex align-items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock text-muted"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    />
+                  </svg>
+                  <span class="text-muted small">8 Min</span>
+                </div>
+              </div>
+              <h4 class="card-title fw-bold">
+                Global Summit 2024: Leaders Address Climate, Trade, and Security
+                Challenges
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column with grid of smaller articles -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <!-- Top row articles -->
+            <div class="col-md-6">
+              <div class="border-0">
+                <img
+                  src="images/8.png"
+                  class="rounded img-fluid"
+                  alt="Blockchain"
+                />
+                <div class="card-body ps-0 pt-2">
+                  <div class="d-flex align-items-center gap-3 mb-1">
+                    <span class="text-muted small">Technology</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-clock text-muted"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                        />
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                        />
+                      </svg>
+                      <span class="text-muted small">5 Min</span>
+                    </div>
+                  </div>
+                  <h6 class="card-title fw-bold">
+                    Blockchain Beyond Cryptocurrency: Revolutionizing Industries
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="border-0">
+                <img
+                  src="images/9.png"
+                  class="rounded img-fluid"
+                  alt="Space Exploration"
+                />
+                <div class="card-body ps-0 pt-2">
+                  <div class="d-flex align-items-center gap-3 mb-1">
+                    <span class="text-muted small">Technology</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-clock text-muted"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                        />
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                        />
+                      </svg>
+                      <span class="text-muted small">5 Min</span>
+                    </div>
+                  </div>
+                  <h6 class="card-title fw-bold">
+                    Exploring the Future of Space Exploration Beyond Mars
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom row articles -->
+            <div class="col-md-6">
+              <div class="border-0">
+                <img
+                  src="images/10.jpg"
+                  class="rounded img-fluid"
+                  alt="Fitness"
+                />
+                <div class="card-body ps-0 pt-2">
+                  <div class="d-flex align-items-center gap-3 mb-1">
+                    <span class="text-muted small">Health</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-clock text-muted"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                        />
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                        />
+                      </svg>
+                      <span class="text-muted small">5 Min</span>
+                    </div>
+                  </div>
+                  <h6 class="card-title fw-bold">
+                    The Role of Fitness in Chronic Disease Management
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="border-0">
+                <img
+                  src="images/11.png"
+                  class="rounded img-fluid"
+                  alt="Sleep Science"
+                />
+                <div class="card-body ps-0 pt-2">
+                  <div class="d-flex align-items-center gap-3 mb-1">
+                    <span class="text-muted small">Technology</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-clock text-muted"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                        />
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                        />
+                      </svg>
+                      <span class="text-muted small">6 Min</span>
+                    </div>
+                  </div>
+                  <h6 class="card-title fw-bold">
+                    The Science of Sleep: How to Rest Better in a 24/7 World
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest Section -->
+    <div class="container-fluid bg-danger py-5 mt-5 mb-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Text Column -->
+          <div class="col-md-4 text-white g-5">
+            <h5 class="fw-bold mb-4">
+              Blockchain Beyond Cryptocurrency: Revolutionizing Industries
+            </h5>
+            <p class="mb-4">
+              Smart city initiatives are leveraging AI, IoT, and data analytics
+              to create sustainable spaces.
+            </p>
+            <div class="d-flex align-items-center">
+              <img
+                src="images/6.png"
+                class="rounded-circle me-2"
+                alt="Author"
+              />
+              <div>
+                <small>By <strong>Ethan Collins</strong></small
+                ><br />
+                <small>Published: Jan 11, 2025</small>
+              </div>
+            </div>
+          </div>
+          <!-- Image Column -->
+          <div class="col-md-8">
+            <img
+              src="images/4.avif"
+              class="img-fluid rounded"
+              alt="AI and blockchain"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5 mt-5 mb-5">
+      <h2 class="fw-bold mb-4">Editors Pick</h2>
+
+      <div class="row g-4">
+        <!-- Featured Article - Full Width -->
+        <div class="col-12 mb-3">
+          <div class="card border-0">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <div class="card-body ps-0">
+                  <h3 class="card-title fw-bold mb-5">
+                    5G Expansion: What It Means for Consumers and Businesses
+                  </h3>
+                  <hr />
+                  <p class="text-muted">
+                    From faster downloads to smarter cities, 5G is reshaping
+                    global connectivity.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <img
+                  src="images/12.avif"
+                  class="img-fluid rounded w-100"
+                  alt="5G Technology"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid of Smaller Articles -->
+        <div class="col-12">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Sports Article -->
+            <div class="col">
+              <div class="card border-0 h-100">
+                <img
+                  src="images/13.png"
+                  class="card-img-top rounded"
+                  alt="Cricket World Cup"
+                />
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <span class="badge bg-light text-dark">Sports</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-clock text-muted"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                        />
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                        />
+                      </svg>
+                      <span class="text-muted small">13 Min</span>
+                    </div>
+                  </div>
+                  <h5 class="card-title fw-bold">
+                    Cricket World Cup: Highlights from an Action-Packed Week
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technology Article 1 -->
+            <div class="col">
+              <div class="card border-0 h-100">
+                <img
+                  src="images/11.png"
+                  class="card-img-top rounded"
+                  alt="Sleep Science"
+                />
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <span class="badge bg-light text-dark">Technology</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-clock text-muted"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                        />
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                        />
+                      </svg>
+                      <span class="text-muted small">6 Min</span>
+                    </div>
+                  </div>
+                  <h5 class="card-title fw-bold">
+                    The Science of Sleep: How to Rest Better in a 24/7 World
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technology Article 2 -->
+            <div class="col">
+              <div class="card border-0 h-100">
+                <img
+                  src="images/9.png"
+                  class="card-img-top rounded"
+                  alt="Space Exploration"
+                />
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <span class="badge bg-light text-dark">Technology</span>
+                    <div class="d-flex align-items-center gap-1">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-clock text-muted"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                        />
+                        <path
+                          d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                        />
+                      </svg>
+                      <span class="text-muted small">8 Min</span>
+                    </div>
+                  </div>
+                  <h5 class="card-title fw-bold">
+                    Exploring the Future of Space Exploration Beyond Mars
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Technology</h2>
+        <a href="#" class="text-danger text-decoration-none"
+          >View all <span>&rarr;</span></a
+        >
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- First Article -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="images/12.avif"
+              class="rounded img-fluid"
+              alt="5G Expansion"
+            />
+            <div class="card-body ps-0">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <span class="text-muted small">Sofia Ramirez</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock text-muted"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    />
+                  </svg>
+                  <span class="text-muted small">8 Min</span>
+                </div>
+              </div>
+              <h5 class="card-title fw-bold">
+                5G Expansion: What It Means for Consumers and Businesses
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Article -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="images/8.png"
+              class="rounded img-fluid"
+              alt="Blockchain"
+            />
+            <div class="card-body ps-0">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <span class="text-muted small">Ethan Collins</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock text-muted"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    />
+                  </svg>
+                  <span class="text-muted small">5 Min</span>
+                </div>
+              </div>
+              <h5 class="card-title fw-bold">
+                Blockchain Beyond Cryptocurrency: Revolutionizing Industries
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Article -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="images/9.png"
+              class="rounded img-fluid"
+              alt="Space Exploration"
+            />
+            <div class="card-body ps-0">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <span class="text-muted small">Sarah Lee</span>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock text-muted"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    />
+                  </svg>
+                  <span class="text-muted small">9 Min</span>
+                </div>
+              </div>
+              <h5 class="card-title fw-bold">
+                Exploring the Future of Space Exploration Beyond Mars
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5 mt-5 mb-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Staff Writers</h2>
+        <a href="#" class="text-danger text-decoration-none"
+          >View all <span>&rarr;</span></a
+        >
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Ethan Collins -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="images/14.jpg"
+              class="card-img-top img-fluid"
+              alt="Ethan Collins"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-1">Ethan Collins</h5>
+              <p class="text-muted small">Senior Writer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sofia Ramirez -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="images/15.jpg"
+              class="card-img-top img-fluid"
+              alt="Sofia Ramirez"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-1">Sofia Ramirez</h5>
+              <p class="text-muted small">Author</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laura Bennett -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="images/16.jpg"
+              class="card-img-top img-fluid"
+              alt="Laura Bennett"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-1">Laura Bennett</h5>
+              <p class="text-muted small">Editor</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Michael Brown -->
+        <div class="col">
+          <div class="card border-0">
+            <img
+              src="images/17.jpg"
+              class="card-img-top img-fluid"
+              alt="Michael Brown"
+            />
+            <div class="card-body">
+              <h5 class="card-title fw-bold mb-1">Michael Brown</h5>
+              <p class="text-muted small">Content Writer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5 py-5">
+      <h2 class="fw-bold mb-4">Articles & Resources</h2>
+
+      <div class="row g-4">
+        <!-- Technology Article -->
+        <div class="col-12">
+          <div class="card border-0">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-6">
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <span class="badge bg-light text-dark">Technology</span>
+                    <span class="text-muted small">December 18, 2024</span>
+                  </div>
+                  <h3 class="card-title fw-bold mb-3">
+                    5 Cutting-Edge Technologies in Education Transforming How We
+                    Learn
+                  </h3>
+                  <a href="#" class="text-danger text-decoration-none"
+                    >Read More →</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="images/18.jpg"
+                  class="img-fluid"
+                  alt="Education Technology"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Health Article -->
+        <div class="col-12">
+          <div class="card border-0">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-6">
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <span class="badge bg-light text-dark">Health</span>
+                    <span class="text-muted small">December 16, 2024</span>
+                  </div>
+                  <h3 class="card-title fw-bold mb-3">
+                    How AI is Revolutionizing Healthcare: Improving Diagnostics
+                    and Patient Care
+                  </h3>
+                  <a href="#" class="text-danger text-decoration-none"
+                    >Read More →</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img
+                  src="images/19.avif"
+                  class="img-fluid"
+                  alt="Healthcare AI"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Business Article -->
+        <div class="col-12">
+          <div class="card border-0">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-6">
+                <div class="card-body ps-0">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <span class="badge bg-light text-dark">Business</span>
+                    <span class="text-muted small">December 16, 2024</span>
+                  </div>
+                  <h3 class="card-title fw-bold mb-3">
+                    The Rise of Remote Work: The Shift to Flexible Work
+                    Environments
+                  </h3>
+                  <a href="#" class="text-danger text-decoration-none"
+                    >Read More →</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img src="images/20.jpg" class="img-fluid" alt="Remote Work" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-5 mb-5 position-relative overflow-hidden">
+      <div class="bg-danger container position-relative px-5 py-5">
+        <div class="row align-items-center g-5 gap-5">
+          <div class="col-lg-6 g-5">
+            <h2 class="text-white fw-bold mb-5">
+              Stay informed with our latest news and updates.
+            </h2>
+            <p class="text-white mb-5">
+              Get breaking news and curated stories delivered to your inbox
+              every day. Be the first to know what's happening around the world
+            </p>
+          </div>
+          <div class="col-lg-4 g-5">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Enter your email"
+                  aria-label="Email address"
+                />
+              </div>
+              <button type="submit" class="btn btn-dark w-100">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Background Text Overlay -->
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center overflow-hidden"
+      >
+        <div
+          class="text-white text-uppercase fw-bold opacity-25 fs-1 position-absolute"
+          style="user-select: none; pointer-events: none"
+        >
+          News * News * News * News * News * News * News * News * News
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5 py-5">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold">Podcast</h2>
+        <a href="#" class="text-danger text-decoration-none">View all →</a>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- First Podcast -->
+        <div class="col">
+          <div class="card border-0">
+            <div class="position-relative">
+              <img
+                src="images/21.jpg"
+                class="card-img-top"
+                alt="Sports Podcast"
+              />
+              <button
+                class="btn btn-danger rounded-circle position-absolute bottom-0 end-0 m-3"
+                style="width: 50px; height: 50px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="card-body ps-0">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="badge bg-light text-dark">Sports</span>
+                <div class="d-flex align-items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock text-muted"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    />
+                  </svg>
+                  <span class="text-muted small">8 Min</span>
+                </div>
+              </div>
+              <h5 class="card-title fw-bold mb-2">
+                The challenges and opportunities of professional sports
+              </h5>
+              <div class="d-flex align-items-center">
+                <span class="text-muted small"
+                  >Ethan Collins, Senior Writer</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Podcast -->
+        <div class="col">
+          <div class="card border-0">
+            <div class="position-relative">
+              <img
+                src="images/22.jpg"
+                class="card-img-top"
+                alt="Entertainment Podcast"
+              />
+              <button
+                class="btn btn-danger rounded-circle position-absolute bottom-0 end-0 m-3"
+                style="width: 50px; height: 50px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="card-body ps-0">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="badge bg-light text-dark">Entertainment</span>
+                <div class="d-flex align-items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock text-muted"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    />
+                  </svg>
+                  <span class="text-muted small">5 Min</span>
+                </div>
+              </div>
+              <h5 class="card-title fw-bold mb-2">
+                E-commerce Growth: Transforming Retail in 2024
+              </h5>
+              <div class="d-flex align-items-center">
+                <span class="text-muted small">Laura Bennett, Editor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Podcast -->
+        <div class="col">
+          <div class="card border-0">
+            <div class="position-relative">
+              <img
+                src="images/23.jpg"
+                class="card-img-top"
+                alt="Business Podcast"
+              />
+              <button
+                class="btn btn-danger rounded-circle position-absolute bottom-0 end-0 m-3"
+                style="width: 50px; height: 50px"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="card-body ps-0">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <span class="badge bg-light text-dark">Business</span>
+                <div class="d-flex align-items-center gap-1">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-clock text-muted"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                    />
+                    <path
+                      d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                    />
+                  </svg>
+                  <span class="text-muted small">4 Min</span>
+                </div>
+              </div>
+              <h5 class="card-title fw-bold mb-2">
+                Sustainable Fashion: Moving Towards Eco-Friendly Designs
+              </h5>
+              <div class="d-flex align-items-center">
+                <span class="text-muted small">Laura Bennett, Editor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light py-5 px-5">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">JOXNEWS</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Entertainment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Politics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Technology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Health</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <hr />
+
+      <div class="container-fluid">
+        <div class="row row-cols-lg-2 row-cols-md-2 py-5">
+          <div class="align-items-center">
+            <div class="">
+              <h4 class="mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor dfddh
+              </h4>
+            </div>
+            <div>
+              <div class="row g-3">
+                <div class="col-4">
+                  <img
+                    src="images/24.jpeg"
+                    alt="Placeholder"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="images/25.png"
+                    alt="Placeholder"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="images/26.png"
+                    alt="Placeholder"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <!-- Pages Column -->
+            <div class="col-md-3 mb-3 mb-md-0">
+              <h5 class="text-uppercase fw-bold mb-4">PAGES</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">About us</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">Categories</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">News</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">Authors</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">Podcast</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50"
+                    >Newsletter Plans</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Categories Column -->
+            <div class="col-md-3 mb-3 mb-md-0">
+              <h5 class="text-uppercase fw-bold mb-4">CATEGORIES</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">Business</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">Health News</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">World News</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">Sports</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">Culture</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="#" class="nav-link p-0 text-white-50">Technology</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-3">
+              <div class="d-flex flex-column gap-2">
+                <h5 class="text-uppercase fw-bold mb-4">Follow Us</h5>
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-decoration-none text-white p-2 rounded bg-dark"
+                >
+                  <div class="bg-secondary p-2 me-3">
+                    <i class="bi bi-facebook"></i>
+                  </div>
+                  <span>Facebook</span>
+                  <i class="bi bi-arrow-right ms-auto"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-decoration-none text-white p-2 rounded bg-dark"
+                >
+                  <div class="bg-secondary p-2 me-3">
+                    <i class="bi bi-youtube"></i>
+                  </div>
+                  <span>YouTube</span>
+                  <i class="bi bi-arrow-right ms-auto"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-decoration-none text-white p-2 rounded bg-dark"
+                >
+                  <div class="bg-secondary p-2 me-3">
+                    <i class="bi bi-instagram"></i>
+                  </div>
+                  <span>Instagram</span>
+                  <i class="bi bi-arrow-right ms-auto"></i>
+                </a>
+
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-decoration-none text-white p-2 rounded bg-dark"
+                >
+                  <div class="bg-secondary p-2 me-3">
+                    <i class="bi bi-twitter-x"></i>
+                  </div>
+                  <span>Twitter</span>
+                  <i class="bi bi-arrow-right ms-auto"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <p>@2025 joxnews - Work by crmake. Made with wetterbox.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
